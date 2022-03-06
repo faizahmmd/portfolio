@@ -7,6 +7,7 @@ import 'package:web_portfolio/utils/screen_helper.dart';
 
 class Carousel extends StatelessWidget {
   final CarouselController carouselController = CarouselController();
+
   @override
   Widget build(BuildContext context) {
     double carouselContainerHeight = MediaQuery.of(context).size.height *

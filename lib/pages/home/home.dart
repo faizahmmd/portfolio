@@ -13,9 +13,6 @@ import 'package:web_portfolio/utils/constants.dart';
 import 'package:web_portfolio/utils/globals.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
 
-import 'components/ios_app_ad.dart';
-import 'components/website_ad.dart';
-
 class Home extends StatefulWidget {
   const Home({Key key}) : super(key: key);
 

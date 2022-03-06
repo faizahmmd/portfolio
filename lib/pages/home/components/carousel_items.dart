@@ -3,6 +3,7 @@ import 'package:flutter/rendering.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:web_portfolio/models/carousel_item_model.dart';
 import 'package:web_portfolio/utils/constants.dart';
+import 'dart:html' as html;
 
 List<CarouselItemModel> carouselItems = List.generate(
   5,
@@ -78,30 +79,54 @@ List<CarouselItemModel> carouselItems = List.generate(
           SizedBox(
             height: 25.0,
           ),
-          MouseRegion(
-            cursor: SystemMouseCursors.click,
-            child: Container(
-              decoration: BoxDecoration(
-                color: kPrimaryColor,
-                borderRadius: BorderRadius.circular(8.0),
-              ),
-              height: 48.0,
-              padding: EdgeInsets.symmetric(
-                horizontal: 28.0,
-              ),
-              child: TextButton(
-                onPressed: () {},
-                child: Text(
-                  "GET STARTED",
-                  style: TextStyle(
-                    color: Colors.white,
-                    fontSize: 13.0,
-                    fontWeight: FontWeight.bold,
+          Row(
+            mainAxisAlignment: MainAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              MouseRegion(
+                cursor: SystemMouseCursors.click,
+                child: GestureDetector(
+                  child: Container(
+                    height: 48.0,
+                    width: 48.0,
+                    decoration: BoxDecoration(
+                        color: kPrimaryColor,
+                        borderRadius: BorderRadius.circular(8.0),
+                        image: DecorationImage(
+                            image: AssetImage("instagram_icon.png"),
+                            fit: BoxFit.fill)),
                   ),
+                  onTap: () {
+                    html.window.open(
+                        'https://www.instagram.com/faizahmmd/', "instagram");
+                  },
                 ),
               ),
-            ),
-          )
+              SizedBox(
+                width: 20.0,
+              ),
+              MouseRegion(
+                cursor: SystemMouseCursors.click,
+                child: GestureDetector(
+                  child: Container(
+                    height: 48.0,
+                    width: 48.0,
+                    decoration: BoxDecoration(
+                        color: kPrimaryColor,
+                        borderRadius: BorderRadius.circular(8.0),
+                        image: DecorationImage(
+                            image: AssetImage("linkedin_icon.png"),
+                            fit: BoxFit.fill)),
+                  ),
+                  onTap: () {
+                    html.window.open(
+                        'https://www.linkedin.com/in/faiz-ahammed-82b013b7/',
+                        "linkedIn");
+                  },
+                ),
+              ),
+            ],
+          ),
         ],
       ),
     ),
