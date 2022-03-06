@@ -106,9 +106,12 @@ List<CarouselItemModel> carouselItems = List.generate(
       ),
     ),
     image: Container(
-      child: Image.asset(
-        "assets/faizahammed.png",
-        fit: BoxFit.contain,
+      child: Padding(
+        padding: const EdgeInsets.all(100.0),
+        child: Image.asset(
+          "assets/faizahammed.png",
+          fit: BoxFit.contain,
+        ),
       ),
     ),
   ),

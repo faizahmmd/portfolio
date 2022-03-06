@@ -200,6 +200,12 @@
       "languageVersion": "2.7"
     },
     {
+      "name": "scroll_to_index",
+      "rootUri": "file:///C:/src/flutter/.pub-cache/hosted/pub.dartlang.org/scroll_to_index-1.0.6",
+      "packageUri": "lib/",
+      "languageVersion": "2.1"
+    },
+    {
       "name": "sky_engine",
       "rootUri": "file:///C:/src/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
@@ -278,7 +284,7 @@
       "languageVersion": "2.7"
     }
   ],
-  "generated": "2022-03-06T08:49:24.092823Z",
+  "generated": "2022-03-06T15:54:21.901412Z",
   "generator": "pub",
   "generatorVersion": "2.15.1"
 }

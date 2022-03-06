@@ -10,7 +10,7 @@ final List<FooterItem> footerItems = [
   FooterItem(
     iconPath: "assets/mappin.png",
     title: "ADDRESS",
-    text1: "Kizhakkeveettil",
+    text1: "Kizhakkeveettil,",
     text2: "Pallana, Alappey, Kerala",
   ),
   FooterItem(

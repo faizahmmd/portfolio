@@ -10,16 +10,15 @@ import 'package:web_portfolio/utils/screen_helper.dart';
 List<HeaderItem> headerItems = [
   HeaderItem(
     title: "HOME",
-    onTap: () {},
+    index: 0,
   ),
-  HeaderItem(title: "MY INTRO", onTap: () {}),
-  HeaderItem(title: "SERVICES", onTap: () {}),
-  HeaderItem(title: "PORTFOLIO", onTap: () {}),
-  HeaderItem(title: "TESTIMONIALS", onTap: () {}),
-  HeaderItem(title: "BLOGS", onTap: () {}),
+  HeaderItem(title: "SERVICES", index: 2),
+  HeaderItem(title: "EXPERIENCE", index: 9),
+  HeaderItem(title: "TESTIMONIALS", index: 11),
+  HeaderItem(title: "DOWNLOAD CV", index: 2),
   HeaderItem(
-    title: "HIRE ME",
-    onTap: () {},
+    title: "CONTACT ME",
+    index: 12,
     isButton: true,
   ),
 ];
@@ -61,6 +60,10 @@ class HeaderLogo extends StatelessWidget {
 }
 
 class HeaderRow extends StatelessWidget {
+  HeaderRow({this.newIndex});
+
+  final ValueChanged newIndex;
+
   @override
   Widget build(BuildContext context) {
     return ResponsiveVisibility(
@@ -82,7 +85,9 @@ class HeaderRow extends StatelessWidget {
                         padding: EdgeInsets.symmetric(
                             horizontal: 20.0, vertical: 5.0),
                         child: TextButton(
-                          onPressed: item.onTap,
+                          onPressed: () {
+                            newIndex(item.index);
+                          },
                           child: Text(
                             item.title,
                             style: TextStyle(
@@ -99,7 +104,9 @@ class HeaderRow extends StatelessWidget {
                       child: Container(
                         margin: EdgeInsets.only(right: 30.0),
                         child: GestureDetector(
-                          onTap: item.onTap,
+                          onTap: () {
+                            newIndex(item.index);
+                          },
                           child: Text(
                             item.title,
                             style: TextStyle(
@@ -119,6 +126,10 @@ class HeaderRow extends StatelessWidget {
 }
 
 class Header extends StatelessWidget {
+  Header({this.newIndex});
+
+  final ValueChanged newIndex;
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -170,7 +181,7 @@ class Header extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           HeaderLogo(),
-          HeaderRow(),
+          HeaderRow(newIndex: newIndex),
         ],
       ),
     );
