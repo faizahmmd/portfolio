@@ -24,13 +24,7 @@ final List<Education> educationList = [
         "Course in Android Application Development(Java)",
     linkName: "Keltron, Trivandrum, Kerala",
     period: "2016 - 2016",
-  ),
-  Education(
-    description:
-        "Internship in Android Application Development(Kotlin)",
-    linkName: "",
-    period: "2019 - 2020",
-  ),
+  )
 ];
 
 class EducationSection extends StatelessWidget {

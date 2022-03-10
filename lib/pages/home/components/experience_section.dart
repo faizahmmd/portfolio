@@ -13,13 +13,8 @@ final List<Education> experienceList = [
   ),
   Education(
     description: "Flutter Developer",
-    linkName: "XXXXXXX",
-    period: "2020 January - 2021 February",
-  ),
-  Education(
-    description: "Android Developer Intern",
-    linkName: "XXXXXXX",
-    period: "2019 March - 2020 January",
+    linkName: "Richinnovations Technologies",
+    period: "2019 March - 2021 February",
   )
 ];
 

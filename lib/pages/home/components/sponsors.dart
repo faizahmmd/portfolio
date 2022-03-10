@@ -6,9 +6,6 @@ import 'package:web_portfolio/utils/screen_helper.dart';
 final List<String> sponsorsLogo = [
   "assets/brand1.png",
   "assets/brand2.png",
-  "assets/brand3.png",
-  "assets/brand4.png",
-  "assets/brand5.png",
 ];
 
 class Sponsors extends StatelessWidget {
