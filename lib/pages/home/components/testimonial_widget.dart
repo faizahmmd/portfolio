@@ -8,18 +8,18 @@ import 'package:web_portfolio/utils/screen_helper.dart';
 final List<Testimonial> testimonials = [
   Testimonial(
     text:
-        "This is a testimonial text from Janny Stone. Michele is a professional at what he does and never ceases to amaze me with his beautiful works. I will like to work with him in the future again.",
-    occupation: "Product Designer",
-    personName: "JANNY STONE",
-    profilePhoto: "assets/female.png",
+        "This is a testimonial text from Nikki Issac. We appreciate your contributions made to the organization and wish you all the best for your future endeavors.",
+    occupation: "HR, Richinnovations",
+    personName: "NIKKI ISSAC",
+    profilePhoto: "assets/nikki_issac.jpg",
   ),
-  Testimonial(
-    text:
-        "This is a testimonial text from Ken Williams. Michele is a professional at what he does and never ceases to amaze me with his beautiful works. I will like to work with him in the future again.",
-    occupation: "Art Director",
-    personName: "KEN WILLIAMS",
-    profilePhoto: "assets/male.png",
-  )
+  // Testimonial(
+  //   text:
+  //       "This is a testimonial text from Basil Arackal.",
+  //   occupation: "RIAFY",
+  //   personName: "BASIL ARACKAL",
+  //   profilePhoto: "assets/basil.jpg",
+  // )
 ];
 
 class TestimonialWidget extends StatelessWidget {
