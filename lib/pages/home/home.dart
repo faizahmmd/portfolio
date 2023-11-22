@@ -12,6 +12,7 @@ import 'package:web_portfolio/pages/home/components/testimonial_widget.dart';
 import 'package:web_portfolio/utils/constants.dart';
 import 'package:web_portfolio/utils/globals.dart';
 import 'package:scroll_to_index/scroll_to_index.dart';
+import 'dart:html' as html;
 
 class Home extends StatefulWidget {
   const Home({Key key}) : super(key: key);
@@ -60,7 +61,11 @@ class _HomeState extends State<Home> {
                             padding: EdgeInsets.symmetric(horizontal: 28.0),
                             child: TextButton(
                               onPressed: () async {
-                                await scrollToIndex(headerItems[index].index);
+                                if(headerItems[index].title == "DOWNLOAD CV"){
+                                  html.window.open("assets/resume.pdf", "resume");
+                                }else{
+                                  await scrollToIndex(headerItems[index].index);
+                                }
                               },
                               child: Text(
                                 headerItems[index].title,
@@ -75,7 +80,11 @@ class _HomeState extends State<Home> {
                         )
                       : ListTile(
                           onTap: () async {
-                            await scrollToIndex(headerItems[index].index);
+                            if(headerItems[index].title == "DOWNLOAD CV"){
+                              html.window.open("assets/resume.pdf", "resume");
+                            }else{
+                              await scrollToIndex(headerItems[index].index);
+                            }
                           },
                           title: Text(
                             headerItems[index].title,

@@ -7,7 +7,7 @@ import 'package:web_portfolio/utils/screen_helper.dart';
 
 List<Skill> skills = [
   Skill(
-    skill: "Flutter framework",
+    skill: "Flutter",
     percentage: 80,
   ),
   Skill(
@@ -15,15 +15,11 @@ List<Skill> skills = [
     percentage: 75,
   ),
   Skill(
-    skill: "Kotlin",
-    percentage: 60,
-  ),
-  Skill(
     skill: "Java",
     percentage: 60,
   ),
   Skill(
-    skill: "nodeJS",
+    skill: "Spring boot",
     percentage: 40,
   ),
 ];

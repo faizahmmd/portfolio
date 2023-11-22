@@ -7,14 +7,19 @@ import 'package:web_portfolio/utils/screen_helper.dart';
 
 final List<Education> experienceList = [
   Education(
-    description: "Flutter Developer",
-    linkName: "Riafy Technologies",
-    period: "2021 March - present",
+    description: "Senior Engineer",
+    linkName: "GAVS Technologies",
+    period: "2023 September - present",
   ),
   Education(
     description: "Flutter Developer",
-    linkName: "Richinnovations Technologies",
-    period: "2019 March - 2021 February",
+    linkName: "Applaunch",
+    period: "2022 April - 2023 April",
+  ),
+  Education(
+    description: "Flutter Developer",
+    linkName: "Riafy Technologies",
+    period: "2021 March - 2022 March",
   )
 ];
 

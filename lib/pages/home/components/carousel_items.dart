@@ -38,7 +38,7 @@ List<CarouselItemModel> carouselItems = List.generate(
             height: 10.0,
           ),
           Text(
-            "Mobile Application developer, based in Kochi",
+            "Mobile and Web Application developer, based in Bangalore",
             style: TextStyle(
               color: kCaptionColor,
               fontSize: 15.0,

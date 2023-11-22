@@ -6,6 +6,7 @@ import 'package:web_portfolio/models/header_item.dart';
 import 'package:web_portfolio/utils/constants.dart';
 import 'package:web_portfolio/utils/globals.dart';
 import 'package:web_portfolio/utils/screen_helper.dart';
+import 'dart:html' as html;
 
 List<HeaderItem> headerItems = [
   HeaderItem(
@@ -86,7 +87,11 @@ class HeaderRow extends StatelessWidget {
                             horizontal: 20.0, vertical: 5.0),
                         child: TextButton(
                           onPressed: () {
-                            newIndex(item.index);
+                            if(item.title == "DOWNLOAD CV"){
+                              html.window.open("assets/resume.pdf", "resume");
+                            }else{
+                              newIndex(item.index);
+                            }
                           },
                           child: Text(
                             item.title,
@@ -105,7 +110,11 @@ class HeaderRow extends StatelessWidget {
                         margin: EdgeInsets.only(right: 30.0),
                         child: GestureDetector(
                           onTap: () {
-                            newIndex(item.index);
+                            if(item.title == "DOWNLOAD CV"){
+                              html.window.open("assets/resume.pdf", "resume");
+                            }else{
+                              newIndex(item.index);
+                            }
                           },
                           child: Text(
                             item.title,
